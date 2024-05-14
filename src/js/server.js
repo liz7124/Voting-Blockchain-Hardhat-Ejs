@@ -81,7 +81,7 @@ app.post('/vote', async function (request, response) {
     var candId = request.body.candSelect;
     var addr = request.body.accountAddress;
     try {
-        let tx = await RC.vote(candId);
+        let tx = await RC.vote(candId, addr);
         console.log(tx);
         response.redirect('/voting');
     } catch(err) {

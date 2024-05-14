@@ -79,9 +79,9 @@ contract voting {
     }
   }
 
-  function vote (uint _candId) public voteReq(msg.sender, _candId) {
+  function vote (uint _candId, address _addr) public voteReq(_addr, _candId) {
     
-    voters[msg.sender].voted = true;
+    voters[_addr].voted = true;
     candidates[_candId].voteCount++;
 
     emit votedEvent(_candId);
