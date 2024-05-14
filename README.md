@@ -1,5 +1,5 @@
 ## Prerequisites
-Run setup.sh
+Run `setup.sh`
 Run `npx hardhat run scripts/deploy.cjs --network localhost`
 
 ## Test
