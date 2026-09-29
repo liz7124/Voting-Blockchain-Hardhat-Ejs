@@ -1,4 +1,6 @@
 ## Prerequisites
+**Node version 20**
+
 Run `npm init`
 
 Run `npm install --save-dev hardhat`
